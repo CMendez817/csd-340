@@ -3,38 +3,55 @@
     margin: 20px;
 }
 
-/* Center h1 */
+/* Center main title */
 h1 {
     text-align: center;
 }
 
-/* Side-by-side divs */
+/* Side by side layout */
 div {
     box-sizing: border-box;
 }
 
-/* Ordered list section */
-ol, h3:first-of-type {
+/* Grouped list containers */
+.list-box {
+    border-radius: 15px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+/* Solid border books section */
+.solid {
     border: 1px solid red;
-    border-radius: 15px;
-    padding: 10px;
-    list-style: decimal inside; /* numbers inside border */
 }
 
-/* Unordered list section */
-ul, h3:last-of-type {
+/* Dashed border learned section */
+.dashed {
     border: 1px dashed red;
-    border-radius: 15px;
-    padding: 10px;
-    list-style: upper-roman inside; /* roman numerals inside border */
 }
 
-/* Headings + list font weights */
-h3 {
+/* Title styling inside boxes */
+.list-box h3 {
     font-weight: 500;
+    margin-top: 0;   /* keep title snug/clean in the box */
 }
-ol, ul {
+
+/* List styling inside boxes */
+.list-box ol,
+.list-box ul {
     font-weight: 300;
+    margin: 10px 0 0 20px;
+    padding: 0;
+}
+
+/* Ordered list formatting */
+ol {
+    list-style: decimal inside;   /* numbers inside the border */
+}
+
+/* Unordered list formatting */
+ul {
+    list-style: upper-roman inside;  /* roman numerals inside the border */
 }
 
 /* Bottom div */
