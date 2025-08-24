@@ -1,0 +1,55 @@
+/* General container */
+#container {
+    margin: 20px;
+}
+
+/* Center h1 */
+h1 {
+    text-align: center;
+}
+
+/* Side-by-side divs */
+div {
+    box-sizing: border-box;
+}
+
+/* Ordered list section */
+ol, h3:first-of-type {
+    border: 1px solid red;
+    border-radius: 15px;
+    padding: 10px;
+    list-style: decimal inside; /* numbers inside border */
+}
+
+/* Unordered list section */
+ul, h3:last-of-type {
+    border: 1px dashed red;
+    border-radius: 15px;
+    padding: 10px;
+    list-style: upper-roman inside; /* roman numerals inside border */
+}
+
+/* Headings + list font weights */
+h3 {
+    font-weight: 500;
+}
+ol, ul {
+    font-weight: 300;
+}
+
+/* Bottom div */
+#container > div:last-child {
+    width: 100%;
+    margin-top: 60%;
+    float: right;
+    margin-bottom: 20px;
+}
+
+/* Link styles */
+a {
+    text-decoration: none;
+    color: #2980B9;
+}
+a:hover {
+    text-decoration: underline;
+}
