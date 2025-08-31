@@ -1,0 +1,33 @@
+/* Container styling */
+#container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Center the H1 title */
+h1 {
+    text-align: center;
+    color: rgba(0, 128, 255, 0.8); /* optional color */
+}
+
+/* Image gallery grid as a table */
+#image-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    margin-top: 10%;
+    border: 2px solid #333;  /* outer border */
+    border-collapse: collapse; /* makes it look like a table */
+}
+
+/* Each grid cell (book box) */
+#image-gallery > div {
+    border: 1px solid #333;  /* inner cell borders */
+    padding: 15px;
+    text-align: center;      /* center all content */
+}
+
+/* Each book title */
+h3 {
+    margin-bottom: 10px;
+    color: rgba(255,
+
