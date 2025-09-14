@@ -1,0 +1,75 @@
+/*Cameron Mendez*/
+/*09/14/2025*/
+/*Module-8*/
+
+/* Header styling */
+header {
+    background: #FF7F50;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+}
+
+/* Card styles */
+.card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 20px 0; 
+    padding: 20px;
+    width: 60%; 
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+    background: #fff;
+}
+
+.card-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    background: #FF7F50;
+    color: #fff;
+    padding: 10px;
+    border-radius: 6px 6px 0 0;
+    margin: 0;
+}
+
+.card-content {
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+/* Movies Table Styles */
+#movies {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+#movies th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #f4f4f4;
+}
+
+#movies td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+/* Container */
+.container {
+    margin: 20px 0;   /* space between containers */
+    padding-left: 5%; /* content away from the left edge */
+    text-align: left; /* text stays left-aligned */
+}
+
+/* Footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #FF7F50;
+    color: #fff;
+    text-align: right;
+    padding: 5px;
+}
