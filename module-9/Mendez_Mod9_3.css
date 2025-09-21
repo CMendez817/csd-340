@@ -1,0 +1,56 @@
+/* Global settings */
+html, body {
+    font-size: 16px;
+}
+
+/* Paragraph text */
+p {
+    font-weight: 400;
+    line-height: 1.4em;
+}
+
+/* Heading styles */
+h1 {
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h2 {
+    font-weight: 500;
+    text-align: left;
+    padding-top: 15px;
+}
+
+/* Address block */
+address {
+    text-align: center;
+}
+
+/* Website link */
+address a {
+    font-weight: bold;
+    font-size: 1.25em;
+    color: #4F3674;
+    text-decoration: none;
+}
+
+/* Hover state */
+address a:hover {
+    text-decoration: underline;
+    background-color: #D6A800;
+}
+
+/* Visited state */
+address a:visited {
+    color: #800080; /* Example: purple, you can pick another */
+}
+
+/* Special classes */
+.sentence {
+    font-style: italic;
+}
+
+.intro {
+    text-indent: 2em;
+}
