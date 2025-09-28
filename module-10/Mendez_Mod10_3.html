@@ -2,7 +2,6 @@
 <!-- Module 10.3 -->
 <!-- 09/28/2025 -->
 
-
 <!DOCTYPE HTML PUBLIC '-//W3C//DTD HTML 4.01 Transitional//EN'
   'http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd'>
 
@@ -11,7 +10,7 @@
     <title>CSD 340 Web Development with HTML and CSS</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <script>
-      // Toggle inversion when an image is hovered over
+      // Toggle inversion when an image is clicked
       function invertImage(imgId) {
         var img = document.getElementById(imgId);
         if (img.style.filter === "invert(100%)") {
@@ -25,14 +24,12 @@
 
   <body>
     <h1>Assignment 10.3: JavaScript - Part 2</h1>
-    <p>Hover over an image to invert its colors</p>
+    <p>Click an image to invert its colors</p>
 
     <div>
       <a href="#">
         <img id="img1" src="images/FCDallas.png" alt="First Image"
-             onmouseover="this.style.filter='invert(100%)'" 
-             onmouseout="this.style.filter='invert(0%)'" 
-	     width="300" height="200">
+             onclick="invertImage('img1')" width="300" height="200">
       </a>
     </div>
 
@@ -41,21 +38,15 @@
     <div>
       <a href="#">
         <img id="img2" src="images/star-wars-squadrons-background.webp" alt="Second Image"
-             onmouseover="this.style.filter='invert(100%)'" 
-             onmouseout="this.style.filter='invert(0%)'" 
-	     width="300" height="200">
+             onclick="invertImage('img2')" width="300" height="200">
       </a>
     </div>
 
     <br />
-    <p id="message">Hover over an image to toggle its color scheme.</p>
+    <p id="message">Click an image to toggle its color scheme.</p>
   </body>
 </html>
-	<!-- Footer -->
-    <footer>
-        <p><a href="../index.html">Back to Portal Page</a></p>
-    </footer>
-
-    </div>
-</body>
-</html>
+<!-- Footer -->
+<footer>
+    <p><a href="../index.html">Back to Portal Page</a></p>
+</footer>
