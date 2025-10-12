@@ -1,0 +1,103 @@
+<!-- Cameron Mendez --> 
+<!-- 08/24/2025 -->
+<!-- Module 12.2 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSD 340 Web Development with HTML and CSS</title>
+  <link rel="stylesheet" href="Mendez_Mod12_2.css">
+  <script>
+    // Create array of top 10 favorite books
+    const books = [
+      "Ulysses",
+      "The Great Gatsby",
+      "The Hobbit",
+      "The Catcher in the Rye",
+      "Ender’s Game",
+      "Brave New World",
+      "Moby-Dick",
+      "The Martian",
+      "Neuromancer",
+      "Crime and Punishment"
+    ];
+
+    //Function to display books in ascending order
+    function displayTopToBottom() {
+      let output = "<ol>";
+      for (let i = 0; i < books.length; i++) {
+        output += "<li>" + books[i] + "</li>";
+      }
+      output += "</ol>";
+      document.getElementById("bookList").innerHTML = output;
+    }
+
+    //Function to display books in descending order
+    function displayBottomToTop() {
+      let output = "<ol>";
+      for (let i = books.length - 1; i >= 0; i--) {
+        output += "<li>" + books[i] + "</li>";
+      }
+      output += "</ol>";
+      document.getElementById("bookList").innerHTML = output;
+    }
+  </script>
+</head>
+
+<body>
+  <div id="container">
+    <h1>Assignment 12.2: JavaScript - Part 4</h1>
+
+    <!-- Side by side divs -->
+    <div style="width: 45%; float: left;">
+      <div class="list-box solid">
+        <h3>Top 10 Favorite Books</h3>
+
+        <!-- Buttons at top -->
+        <div>
+          <button onclick="displayTopToBottom()">Top to Bottom</button>
+          <button onclick="displayBottomToTop()">Bottom to Top</button>
+        </div>
+
+        <hr>
+
+        <!-- Dynamic list -->
+        <div id="bookList">
+          <ol>
+            <li>Ulysses</li>
+            <li>The Great Gatsby</li>
+            <li>The Hobbit</li>
+            <li>The Catcher in the Rye</li>
+            <li>Ender’s Game</li>
+            <li>Brave New World</li>
+            <li>Moby-Dick</li>
+            <li>The Martian</li>
+            <li>Neuromancer</li>
+            <li>Crime and Punishment</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <div style="width: 45%; float: right;">
+      <div class="list-box dashed">
+        <h3>5 Things I’ve Learned Since this Course Started</h3>
+        <ul>
+          <li>How to structure an HTML document correctly</li>
+          <li>How to link CSS files to HTML</li>
+          <li>The difference between relative and absolute links</li>
+          <li>How to validate HTML and CSS using W3C tools</li>
+          <li>How to use GitHub Pages for publishing</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Bottom div -->
+    <div style="width: 100%; margin-top: 60%;">
+      <a href="../index.html">Return to Landing Page</a>
+    </div>
+  </div>
+</body>
+</html>
+
